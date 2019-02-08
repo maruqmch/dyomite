@@ -19,10 +19,14 @@ chown -R dynomite:dynomite /var/run/dynomite
 
 cp init/systemd_environment__dynomite /etc/default/dynomite
 cp init/systemd_service_ubuntu__dynomite.service /lib/systemd/system/dynomite.service
+
 systemctl daemon-reload
+
 systemctl enable dynomite
+
 systemctl status dynomite
 
+create conf dir
 mkdir /etc/dynomite/
 cp /usr/local/src/dynomite/conf/redis_node1.yml /etc/dynomite/dynomite.yml
 
