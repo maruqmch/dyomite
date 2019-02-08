@@ -1,5 +1,5 @@
 # dyomite
-
+How to install dynomite for redis cluster
 apt-get install -y autoconf automake libtool gcc openssl-dev
 
 cd /usr/local/src
